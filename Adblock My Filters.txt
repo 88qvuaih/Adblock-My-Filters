@@ -1,0 +1,80 @@
+! Title: My Filters
+! Expires: 14 days
+
+||google-analytics.com^$script,third-party
+||googletagservices.com/tag/js/gpt.js$script
+||googletagmanager.com/gtm.js$script
+||connect.facebook.net/*/sdk.js$script,third-party
+!||b.st-hatena.com/js/bookmark_button.js$script,third-party
+!||widgets.getpocket.com/v1/j/btn.js$script,third-party
+
+!Disable PWA
+!/service-worker.js$script
+!/serviceworker.js$script
+!/*serviceworker.js$script
+!/*-serviceworker.min.js$script
+!/sw.js$script
+!/*-service-worker.js$script
+!/sw?$script
+!/service-worker-*.js$script
+!/*-sw.js$script
+!/sw2.js$script
+!/sw.caches.js$script
+!/app.js$script
+
+!nicovideo.jp
+||nicovideo.cdn.nimg.jp/html5jiho/$domain=nicovideo.jp
+nicovideo.jp##.SeekBarStoryboardPremiumLink-content
+
+!feedly.com
+||beacon-v2.helpscout.net^$script,domain=feedly.com
+||js.stripe.com^$script,domain=feedly.com
+feedly.com##.hide
+feedly.com##[title="mark as read and remove from list"]
+feedly.com##[title="Mark as read and hide"]
+feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同人音声)"]
+feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同人誌)"]
+feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同人CG集)"]
+feedly.com##[data-alternate-link^="https://fapforfun.net/archives/"]:not([data-title*="Uncen"]):not([data-title^="[3D Hentai]"])
+
+!evernote.com
+evernote.com##qa-COMM_ENGINE_MESSAGE_IFRAME
+
+!gigazine.net
+*$script,domain=gigazine.net
+@@||i.gzn.jp/js/lazysizes.min.js$script,domain=gigazine.net
+@@||platform.twitter.com^$script,domain=gigazine.net
+@@||www.instagram.com/embed.js$script,domain=gigazine.net
+!||gigazine.net^$csp=script-src https://i.gzn.jp https://platform.twitter.com https://www.instagram.com;
+!gigazine.net##.cntimage>img
+gigazine.net##body>div[class][style*="z-index: 2147483"]
+
+!togetter.com
+togetter.com##.right
+
+!instagram.com
+instagram.com##div[style="height: calc(100% + 1px); position: absolute; width: 100%;"]~div
+instagram.com##div[style="height: calc(100% + 1px); position: absolute; width: 100%;"] video+img
+!instagram.com##div[style="height: calc(100% + 1px); position: absolute; width: 100%;"]:where(~div, video+img)
+
+!doujin.moemilk.com
+*$third-party,domain=doujin.moemilk.com
+@@||imgbox.com^$image,domain=doujin.moemilk.com
+@@||pixhost.to^$image,domain=doujin.moemilk.com
+@@||turboimg.net^$image,domain=doujin.moemilk.com
+@@||imagebam.com^$image,domain=doujin.moemilk.com
+
+!hitomi.la
+!hitomi.la##div.gallery-content>.dj
+!hitomi.la##div.gallery-content>.manga
+!hitomi.la##div.gallery-content>.acg
+!hitomi.la##div.gallery-content>.anime
+!hitomi.la##div.gallery-content>.cg
+||ltn.hitomi.la/i8Wspns7.js$script,domain=hitomi.la
+
+!togetter.com
+togetter.com##.fixed_social_footer
+
+!Google Fonts
+!||fonts.googleapis.com^$stylesheet
+!||fonts.gstatic.com/s/$font,third-party
