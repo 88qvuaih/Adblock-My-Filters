@@ -22,6 +22,10 @@
 !/sw.caches.js$script
 !/app.js$script
 
+!evernote.com
+evernote.com##qa-COMM_ENGINE_MESSAGE_IFRAME
+evernote.com##qa-HOME-CONTAINER>div:last-child
+
 !nicovideo.jp
 ||nicovideo.cdn.nimg.jp/html5jiho/$domain=nicovideo.jp
 nicovideo.jp##.SeekBarStoryboardPremiumLink-content
@@ -36,9 +40,6 @@ feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同�
 feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同人誌)"]
 feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同人CG集)"]
 feedly.com##[data-alternate-link^="https://fapforfun.net/archives/"]:not([data-title*="Uncen"]):not([data-title^="[3D Hentai]"])
-
-!evernote.com
-evernote.com##qa-COMM_ENGINE_MESSAGE_IFRAME
 
 !gigazine.net
 *$script,domain=gigazine.net
