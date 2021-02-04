@@ -24,7 +24,7 @@
 
 !evernote.com
 evernote.com##qa-COMM_ENGINE_MESSAGE_IFRAME
-evernote.com##qa-HOME-CONTAINER>div:last-child
+evernote.com##qa-HOME-CONTAINER>:last-child
 
 !nicovideo.jp
 ||nicovideo.cdn.nimg.jp/html5jiho/$domain=nicovideo.jp
@@ -34,8 +34,7 @@ nicovideo.jp##.SeekBarStoryboardPremiumLink-content
 ||beacon-v2.helpscout.net^$script,domain=feedly.com
 ||js.stripe.com^$script,domain=feedly.com
 feedly.com##.hide
-feedly.com##[title="mark as read and remove from list"]
-feedly.com##[title="Mark as read and hide"]
+feedly.com##.EntryHideButton
 feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同人音声)"]
 feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同人誌)"]
 feedly.com##[data-alternate-link^="http://hentai4daily.com/"][data-title^="(同人CG集)"]
